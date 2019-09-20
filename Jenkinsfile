@@ -4,7 +4,6 @@ properties([
         pollSCM('* * * * *')
     ])
 ])
-
 node('master'){  
     
     def mavenHome=tool name: "mavenv3.6.1", type: "maven"

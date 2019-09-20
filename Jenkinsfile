@@ -6,8 +6,6 @@ properties([
         pollSCM('* * * * *')
     ])
 ])
-
-
 node{
     
     stage('CheckOutCode'){

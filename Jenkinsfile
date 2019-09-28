@@ -1,10 +1,11 @@
 #!groovy
-
+#jaleel
 properties([
     buildDiscarder(logRotator(numToKeepStr: '2')),
     pipelineTriggers([
         pollSCM('* * * * *')
     ])
+    
 ])
 node{
     

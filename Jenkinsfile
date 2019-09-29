@@ -16,8 +16,7 @@ node('master'){
  {
   sh  "${mavenHome}/bin/mvn clean package"
  }
- 
-    
+  
  stage('SonarQube Report')
  {
   sh  "${mavenHome}/bin/mvn sonar:sonar"
